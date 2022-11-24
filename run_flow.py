@@ -45,8 +45,9 @@ DFN.set_flow_solver("PFLOTRAN")
 DFN.dfn_gen(output=True)
 
 b = zeros(DFN.num_frac)
-b[:3]= 1e-3
-b[3] = 5e-4 #change the aperture of the fourth fracture
+b[1]= 1e-3
+b[2]= 4.5e-5
+b[3] = 6.3e-5 #change the aperture of the fourth fracture
 
 cwd = os.getcwd()
 ##############
